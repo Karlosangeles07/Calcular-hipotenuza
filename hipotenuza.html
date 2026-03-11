@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<title>Hipotenusa</title>
+
+<style>
+body{
+font-family: Arial;
+}
+
+input{
+margin:5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h3>Calcular Hipotenusa</h3>
+
+Cateto A:
+<input type="number" id="a"><br>
+
+Cateto B:
+<input type="number" id="b"><br>
+
+<button onclick="calcular()">Calcular</button>
+
+<p id="resultado"></p>
+
+<script>
+function calcular(){
+let a = document.getElementById("a").value;
+let b = document.getElementById("b").value;
+
+let h = Math.sqrt(a*a + b*b);
+
+document.getElementById("resultado").innerHTML = "Hipotenusa = " + h;
+}
+</script>
+
+</body>
+</html>
